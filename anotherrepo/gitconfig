@@ -1,0 +1,19 @@
+# git config common to all my personal computers
+# Nicolas Bossard 31 may 2018i
+#
+# This file can be colored using :set syntax=gitconfig
+#
+# This file should be included in ~/.gitconfig by adding following lines : 
+# [include]
+#        path = ~/dotfiles/gitconfig
+#  
+
+[core]
+	editor = vim
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+	ad = add -v 
